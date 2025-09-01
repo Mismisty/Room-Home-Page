@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 15rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+   <div class="flex-content"> 
+      <div class="mobile-desktop" id="desktop-container"> 
+         <img class="mobile" id="slider-image" src="images/mobile-image-hero-1.jpg"   width="375px"  height="360px" alt="plant on a table">
+      </div>
+
+      <div class="open-logo-btn flex">
+        <img class="open" id="open" src="images/icon-hamburger.svg" alt="hamburger menu">
+        <img class="room-logo show" src="images/logo.svg" alt="logo word room">
+      </div>
+      <div class="menu-backdrop hidden" id="backdrop"></div>
+
+      <header class="hero hidden" id="container">
+         <div class="close">
+           <img class="close" id="close" src="images/icon-close.svg" alt="close">
+         </div>
+
+        <nav class="top-nav">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header> 
+    
+      <section class="slide-one">
+        <article>
+          <div class="default-slide" id="slider-para">
+
+          </div>
+      <!--Discover innovative ways to decorate
+          <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make&nbsp;your property a reflection of you and what you love.
+          </p>-->
+         <!--<p class="shop-arrow">Shop now
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="" fill-rule="nonzero"/>
+            </svg>
+          </p>-->
+    </div>
+           <div class="slide-1">
+
+           </div>
+    <!--We are available all across the globe
+        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.
+        </p>
+        <p class="shop-arrow">Shop now
+          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+          </svg>
+        </p>-->
+
+        <div class="slide-2">
+
+        </div>
+        <!--Manufactured with the best materials
+        
+        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.
+        </p>
+        <p class="shop-arrow">Shop now
+          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+          </svg>
+        </p>-->
+
+        <div class="carousel">
+          <button class="arrow left-arrow" id="prev-btn">
+            <svg class="left" width="8" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+
+          <button class="arrow right-arrow" id="next-btn">
+             <svg class="right" width="8" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0L13 12L1 24" stroke="" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+       </article>
+      </section>
+
+      <section class="bottom-section">
+        <div class="chair-table">
+          <img src="images/image-about-dark.jpg" alt="chair and table">
+        </div>
+        <article class="bottom-half">
+          <h2 class="about-title">About our furniture</h2>
+          <p class="multifunctional">Our multifunctional collection blends design and function to  suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </article>
+        <div class="light-chair">
+          <img src="images/image-about-light.jpg" alt="light chair">
+        </div>
+
+      </section>
+
+
+  
+
+  
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kim Carney</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
