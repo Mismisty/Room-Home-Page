@@ -314,7 +314,7 @@ body {
     grid-auto-rows: 1fr;
     gap: 1rem;
     align-items: start;
-    outline: 3px solid yellow;
+    
   }
   .chair-table,
   .light-chair,
