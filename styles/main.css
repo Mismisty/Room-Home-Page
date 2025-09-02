@@ -298,7 +298,7 @@ body {
     width: 75%;
   }
   .carousel {
-    top: 27.8rem;
+    top: 28rem;
     right: 26.4rem;
     width: 6rem;
   }
@@ -319,9 +319,15 @@ body {
     max-width: 100%;
     align-self: start;
   }
+
+  .bottom-half {
+    margin-top: -1rem;
+  }
+  
   .chair-table img,
   .light-chair img {
     height: auto;
     display: block;
   }
+  
 }/*# sourceMappingURL=main.css.map */
