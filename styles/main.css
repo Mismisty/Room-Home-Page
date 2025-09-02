@@ -323,6 +323,10 @@ body {
   .bottom-half {
     margin-top: -1rem;
   }
+
+  .room-logo {
+    margin-top: -1rem;
+  }
   
   .chair-table img,
   .light-chair img {
