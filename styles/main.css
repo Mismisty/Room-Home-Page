@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*IMAGE RESET*/
+img {
+  font-style: italic;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.flex-content {
+  background-color: lightgray;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  width: 375px;
+  height: 7rem;
+  background-color: hsl(0, 100%, 100%);
+}
+
+.mobile {
+  margin: auto;
+  display: block;
+}
+
+.open-logo-btn {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+}
+
+.open {
+  cursor: pointer;
+}
+
+.close {
+  display: block;
+  cursor: pointer;
+  top: 1rem;
+  position: absolute;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+#container {
+  z-index: 10;
+}
+
+.top-nav {
+  left: 30%;
+  align-items: center;
+  display: flex;
+  gap: 1.3rem;
+  justify-content: center;
+  position: absolute;
+  top: 3rem;
+}
+
+.top-nav a {
+  color: hsl(0, 0%, 0%);
+  text-transform: lowercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*CAROUSEL SECTION*/
+.carousel {
+  position: absolute;
+  top: 19.2rem;
+  right: 0;
+  background-color: black;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 7rem;
+  z-index: 0;
+}
+
+.carousel button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.arrow svg {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.left {
+  stroke: hsl(0, 0%, 63%);
+  cursor: pointer;
+}
+
+.right {
+  stroke: hsl(0, 0%, 63%);
+  cursor: pointer;
+}
+
+.left-arrow::before,
+.right-arrow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%; /* Set custom background width */
+  background-color: hsl(0, 0%, 27%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+
+.left-arrow::before {
+  left: 0;
+}
+
+.right-arrow::before {
+  left: auto;
+  right: 0;
+}
+
+.left-arrow:hover::before,
+.right-arrow:hover::before {
+  opacity: 1;
+}
+
+.desktop {
+  display: none;
+}
+
+/*SLIDE 1*/
+.slide-one {
+  background: hsl(0, 100%, 100%);
+}
+
+.discover {
+  font-size: 2rem;
+  text-align: left;
+  width: 85%;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  line-height: 1;
+}
+
+.provide {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 63%);
+  text-align: left;
+  margin: 1rem;
+  line-height: 1.3;
+}
+
+.globe, .manufactured {
+  font-size: 2rem;
+  text-align: left;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  line-height: 1;
+}
+
+/*ARROW SECTION*/
+.shop-arrow {
+  font-size: 20px;
+  color: hsl(0, 0%, 0%);
+  font-weight: 500;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  margin: 3rem 1rem;
+  cursor: pointer;
+}
+
+.shop-arrow svg {
+  font-weight: 700;
+  fill: hsl(0, 0%, 0%);
+}
+
+.shop-arrow:hover {
+  color: hsl(0, 0%, 63%);
+}
+
+.shop-arrow:hover svg {
+  fill: hsl(0, 0%, 63%);
+}
+
+/*---------BOTTOM MOBILE SECTION--------*/
+.about-title {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.multifunctional {
+  color: hsl(0, 0%, 63%);
+  text-align: left;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+}
+
+/*DESKTOP VERSION-------------------------------------*/
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .mobile-desktop {
+    display: block;
+  }
+  .close, .open {
+    display: none;
+  }
+  .hero {
+    display: block;
+    background-color: inherit;
+    width: 65%;
+  }
+  .flex-content {
+    display: flex;
+    background-color: inherit;
+  }
+  #desktop-container {
+    transition: background-image 0.9s ease-in-out;
+  }
+  .mobile-desktop {
+    background-image: url("../images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 500px;
+  }
+  .top-nav {
+    top: 1.8rem;
+    left: 20%;
+  }
+  .top-nav a {
+    color: hsl(0, 100%, 100%);
+  }
+  .top-nav a:hover {
+    border-bottom: 1px solid hsl(0, 100%, 100%);
+  }
+  .slide-one {
+    width: 40%;
+    padding-left: 3rem;
+    line-height: 1.5;
+  }
+  .default-slide {
+    margin-top: 5rem;
+  }
+  .manufactured,
+  .discover, .globe {
+    width: 75%;
+  }
+  .carousel {
+    top: 28rem;
+    right: 26.4rem;
+    width: 6rem;
+  }
+  .right {
+    right: 20px;
+  }
+  /* ------------BOTTOM SECTION-------------*/
+  .bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+  .chair-table,
+  .light-chair,
+  .bottom-half {
+    max-width: 100%;
+    align-self: start;
+  }
+  .chair-table img,
+  .light-chair img {
+    height: auto;
+    display: block;
+  }
+  .bottom-half {
+    margin-top: -1rem;
+  }
+  .room-logo {
+    margin-top: -1rem;
+  }
+}/*# sourceMappingURL=main.css.map */
